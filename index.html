@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        body{
+            background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(images/bg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color:#000 !important;
+
+        }
+       @keyframes borderAnimation {
+    0% {
+        border-color: #EC53B0;
+    }
+    25% {
+        border-color: #3498db;
+    }
+    50% {
+        border-color: transparent;
+    }
+    75% {
+        border-color: #e74c3c;
+    }
+    100% {
+        border-color: #45FFCA;
+    }
+}
+
+.card {
+    color:#fff;
+    background: rgba(0,0,0,0.4);
+    position: relative;
+    border: 2px solid transparent;
+    animation: borderAnimation 3s infinite;
+}
+
+
+    </style>
+</head>
+<body>
+      <audio src="audio/Energetic Motivational - Background Music No Copyright.mp3" autoplay loop></audio>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-lg-4 col-sm-12 col0">
+                <div class="card border-animate">
+                    <h2 class="card-header text-center">Login</h2>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img src="images/a-1.png" alt="" width="100">
+                        </div>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="callsign">Callsign:</label>
+                                <input type="text" class="form-control" id="callsign" name="callsign" required placeholder="All in small letters">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password" required placeholder="Enter my favorite color">
+                            </div>
+                            <button type="submit" class="">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

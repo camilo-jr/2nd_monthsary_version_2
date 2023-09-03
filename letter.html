@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="   https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link text-light" href="#" onclick="window.location.href='final.html';">Final-Page</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+          </ul>
+          <button type="button" class="btn-light btn" onclick="window.location.href='index.html';">Log out</button>
+
+      </div>
+  </div>
+</nav>
+<div class="container-2">
+    <div class="envelope-wrapper">
+        <div class="envelope">
+            <div class="letter">
+               <div class="text">
+
+                <br>
+                <h4 class="text-center">Happy 2nd Monthsary! 💖</h4>
+                
+
+                <h5 class="text-center" style="font-size: 10px;">You mean the world to me.</h5>
+                <figure class="text-center">
+                    <img src="images/dance.gif" alt="kiss" width="70">
+                </figure>
+            </div>
+
+        </div>
+    </div>
+    <div class="heart"></div>
+</div>
+</div>
+<audio src="audio/Ryan Griffin - If All I Ever Do.mp3" autoplay loop></audio>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const envelope = document.querySelector('.envelope-wrapper');
+    envelope.addEventListener('click', () => {
+        envelope.classList.toggle('flap');
+    });
+</script>
+</body>
+</html>
